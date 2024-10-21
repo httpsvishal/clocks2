@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clocks</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <section class="Alarm">
+            <form id="alarm">
+                <h2>Alarm</h2>
+                <label for="timeOfAlarm">
+                    Select Time :
+                    <input type="time" id="timeOfAlarm" required min="0" max="23">
+
+
+                </label>
+
+                <button>Set Alarm</button>
+            </form>
+        </section>
+        <section class="stopwatch">
+            <h2>Stopwatch</h2>
+            <div class="timer">
+                <p>
+                    <span class="stopWatchDisplays">0</span> : Hours
+                    <span class="stopWatchDisplays">0</span> : Minutes
+                    <span class="stopWatchDisplays">0</span> : Seconds
+                    <span class="stopWatchDisplays">0</span> : ms
+                </p>
+                <button id="startstopwatchTimer">Start StopWatch</button>
+                <button id="stopstopwatchTimer">Stop StopWatch</button>
+                <button id="resetwatchTimer">Reset StopWatch</button>
+            </div>
+        </section>
+        <section id="timer">
+            <h2>Timer</h2>
+            <div class="timer">
+                <form id="timerform">
+                    <input type="time" required id="timerDuration" step="1" value="00:00:00">
+                    
+                    <br><br>
+                    <button type="reset" id="resetTimer">Reset Timer</button>
+                    <button type="submit" id="setTimer">Start Timer</button>
+                    <button type="button" id="stopTimer">Stop Timer</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>
